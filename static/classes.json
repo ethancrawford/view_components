@@ -236,6 +236,9 @@
   "FormControl": [
     "Primer::Alpha::TextField"
   ],
+  "FormControl--floatingLabel": [
+    "Primer::Alpha::TextField"
+  ],
   "FormControl--fullWidth": [
     "Primer::Alpha::TextField"
   ],
