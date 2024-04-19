@@ -1,2 +1,2 @@
-<% @input.input_arguments.merge(form: @input.form_id) if @input.form_id? %>
+<% @input.input_arguments.merge(form: @input.form_id) if @input.form_id %>
 <%= builder.hidden_field(@input.name, **@input.input_arguments) %>

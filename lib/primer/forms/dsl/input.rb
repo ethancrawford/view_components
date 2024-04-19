@@ -47,7 +47,7 @@ module Primer
 
         include Primer::ClassNameHelper
 
-        attr_reader :builder, :form, :input_arguments, :label_arguments, :caption, :validation_message, :ids, :form_control, :base_id
+        attr_reader :builder, :form, :form_id, :input_arguments, :label_arguments, :caption, :validation_message, :ids, :form_control, :base_id
 
         alias form_control? form_control
 
@@ -226,7 +226,7 @@ module Primer
           @floating_label
         end
 
-        def form_id?
+        def form_id
           @form_id
         end
 

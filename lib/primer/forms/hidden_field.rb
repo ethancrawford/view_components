@@ -4,7 +4,7 @@ module Primer
   module Forms
     # :nodoc:
     class HiddenField < BaseComponent
-      delegate :builder, :form, to: :@input
+      delegate :builder, :form, :form_id, to: :@input
 
       def initialize(input:)
         @input = input
