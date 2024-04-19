@@ -74,6 +74,7 @@ module Primer
           @full_width = @input_arguments.delete(:full_width)
           @size = @input_arguments.delete(:size)
           @floating_label = @input_arguments.delete(:floating_label) { true }
+          @form_id = @input_arguments.delete(:form_id)
           # If scope_name_to_model is false, the name of the input for eg. `my_field`
           # will be `my_field` instead of the Rails default of `model[my_field]`.
           #
@@ -223,6 +224,10 @@ module Primer
 
         def floating_label?
           @floating_label
+        end
+
+        def form_id?
+          @form_id
         end
 
         def size
